@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 138, 90, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(90, 138, 90, 0.5);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(90, 138, 90, 0.2);
+  color: inherit;
+}
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid rgba(90, 138, 90, 0.6);
+  outline-offset: 2px;
+}
+
+/* Smooth image loading */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove default button styles */
+button {
+  cursor: pointer;
+}
+
+/* Anchor reset */
+a {
+  color: inherit;
+}
